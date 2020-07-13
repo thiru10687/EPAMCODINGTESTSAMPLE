@@ -6,6 +6,9 @@ private int productCode;
 private String productName;
 private int productQuantity;
 
+public Product() {	
+	
+}
 public Product(int productCode, String productName, int productQuantity) {
 	super();
 	this.productCode = productCode;
