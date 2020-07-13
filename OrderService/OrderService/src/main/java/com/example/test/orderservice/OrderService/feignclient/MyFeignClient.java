@@ -14,10 +14,7 @@ import com.example.test.orderservice.OrderService.model.OrderItems;
 
 @FeignClient(value = "${feign.service}",url="${feign.serviceurl}")
 public interface MyFeignClient {	
-@GetMapping("/get/items/{id}")
-public  String addOrderItems(@PathVariable int id);
-@GetMapping("/save/items")
-public void saveOrderItems(@PathVariable List<OrderItems> items);
-		
-	
+@GetMapping("/get/product/{name}")
+public  int getProductItemsByName(@PathVariable String name);
+
 }

@@ -35,10 +35,15 @@
 			<artifactId>spring-cloud-starter-feign</artifactId>
 			<version>1.4.7.RELEASE</version>
 		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/com.ibm.db2.jcc/db2jcc4 -->
+		<!-- https://mvnrepository.com/artifact/com.ibm.db2.jcc/db2-spring-boot-starter -->
 		<dependency>
-			<groupId>com.microsoft.sqlserver</groupId>
-			<artifactId>mssql-jdbc</artifactId>
+			<groupId>com.ibm.db2.jcc</groupId>
+			<artifactId>db2-spring-boot-starter</artifactId>
+			<version>0.0.1</version>
 		</dependency>
+
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
