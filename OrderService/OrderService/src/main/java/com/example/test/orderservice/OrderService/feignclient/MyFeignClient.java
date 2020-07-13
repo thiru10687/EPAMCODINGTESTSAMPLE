@@ -11,10 +11,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.example.test.orderservice.OrderService.model.Order;
 import com.example.test.orderservice.OrderService.model.OrderItems;
+import com.example.test.orderservice.OrderService.model.Product;
 
 @FeignClient(value = "${feign.service}",url="${feign.serviceurl}")
 public interface MyFeignClient {	
 @GetMapping("/get/product/{name}")
-public  int getProductItemsByName(@PathVariable String name);
+public  Product getProductItemsByName(@PathVariable String name);
 
 }

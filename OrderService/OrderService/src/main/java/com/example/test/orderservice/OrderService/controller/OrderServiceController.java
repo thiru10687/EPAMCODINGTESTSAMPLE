@@ -51,9 +51,8 @@ public class OrderServiceController {
 	  
 	  if(null != items && items.size()>=1) {		   
 		  items.stream().forEach((product) -> {			  
-			  int number = myFeignClient.getProductItemsByName(product.getItemName());
-			  
-			  if(number>=product.getQuantity()) {
+			  Product newProduct = myFeignClient.getProductItemsByName(product.getItemName());
+			  if(newProduct.getProductQuantity()>=product.getQuantity()) {
 				  flag[0]= true;
 			  }
 		   });		  
